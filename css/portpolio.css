@@ -148,28 +148,48 @@
 	width: 100%;
 	padding: 90px 0 0 0;
 }
-.portpolio_all div {
-	width: 335px;
-	height: 335px;
-	border: 1px solid #ccc;
+.portpolio_all .item {
+	width: 336px;
+	height: 336px;
+	overflow: hidden;
+	position: relative;
 	float: left;
-	margin: 0 6px 6px 0;
+	margin: 0 8px 8px 0;
 }
-.portpolio_all div:nth-child(3) {
-	margin-right: 0;
-}
-.portpolio_all div:nth-child(6) {
-	margin-right: 0;
-}
-.portpolio_all div:nth-child(9) {
-	margin-right: 0;
-}
-.portpolio_all div:hover {
+.portpolio_all .item .caption {
+	width: 336px;
+	height: 336px;
 	background: #ffae4c;
-	border: 1px solid #ffae4c;
-	z-index: 9999;
+	color: #fff;
+	position: absolute;
+	left:0;
+	display: none;
+	font-size: 15px;
+	text-align: center;
+	line-height: 336px;
+	letter-spacing: -0.04em;
+	/* opacity setting */
+	filter:alpha(opacity=80);    /* ie  */
+	-moz-opacity:0.8;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 0.8;    /* for really really old safari */
+	opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
 }
-.portpolio_all img:hover {
-	background: #ffae4c;
+.portpolio_all .item .caption span {
+	width: 200px;
 }
-
+.portpolio_all .item .caption a {
+	display: block;
+	color: #fff;
+}
+.portpolio_all img {
+	position: absolute;
+}
+.portpolio_all ul li:nth-child(3) {
+	margin-right: 0;
+}
+.portpolio_all ul li:nth-child(6) {
+	margin-right: 0;
+}
+.portpolio_all ul li:nth-child(9) {
+	margin-right: 0;
+}
