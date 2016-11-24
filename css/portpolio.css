@@ -1,3 +1,7 @@
+.clear {
+	clear: both;
+}
+
 /*gnb*/
 #wrap {
 	width: 100%;
@@ -50,7 +54,7 @@
 	width: 1024px;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 60px 0 0 0;
+	padding: 60px 0 60px 0;
 	font-family: 'NanumBarunGothic';
 }
 #content h1 {
@@ -140,3 +144,32 @@
 	color: #fff;
 	text-decoration: none;
 }
+.portpolio_all {
+	width: 100%;
+	padding: 90px 0 0 0;
+}
+.portpolio_all div {
+	width: 335px;
+	height: 335px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 0 6px 6px 0;
+}
+.portpolio_all div:nth-child(3) {
+	margin-right: 0;
+}
+.portpolio_all div:nth-child(6) {
+	margin-right: 0;
+}
+.portpolio_all div:nth-child(9) {
+	margin-right: 0;
+}
+.portpolio_all div:hover {
+	background: #ffae4c;
+	border: 1px solid #ffae4c;
+	z-index: 9999;
+}
+.portpolio_all img:hover {
+	background: #ffae4c;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if It IE 9]>
+    <script src="http://oss.maxcdh.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<title>test</title>
+<!-- <link rel="stylesheet" type="text/css" href="css/darum_reset.css">
+<link rel="stylesheet" type="text/css" href="css/font.css">
+<link rel="stylesheet" type="text/css" href="css/portpolio.css"> -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+	//move the image in pixel
+	var move = -15;
+
+	//zoom percentage, 1.2 =120%
+	var zoom = 1.2;
+
+	//On mouse over those thumbnail
+	$('.item').hover(function() {
+
+		//Set the width and height according to the zoom percentage
+		width = $('.item').width() * zoom;
+		height = $('.item').height() * zoom;
+
+		//Move and zoom the image
+		$(this).find('.im').stop(false,true).animate({'width':width, 'height':height, 'top':move, 'left':move}, {duration:200});
+
+		//Display the caption
+		$(this).find('div.caption').stop(false,true).fadeIn(200);
+	},
+	function() {
+		//Reset the image
+		$(this).find('.im').stop(false,true).animate({'width':$('.item').width(), 'height':$('.item').height(), 'top':'0', 'left':'0'}, {duration:100});
+
+		//Hide the caption
+		$(this).find('div.caption').stop(false,true).fadeOut(200);
+	});
+
+});
+
+</script>
+<style type="text/css">
+.item {
+	width: 335px;
+	height: 335px;
+	overflow: hidden;
+	position: relative;
+}
+.item .caption {
+	width: 335px;
+	height: 335px;
+	background: #000;
+	color: #fff;
+	position: absolute;
+	left:0;
+	display: none;
+	/* opacity setting */
+	filter:alpha(opacity=80);    /* ie  */
+	-moz-opacity:0.8;    /* old mozilla browser like netscape  */
+	-khtml-opacity: 0.8;    /* for really really old safari */
+	opacity: 0.8;    /* css standard, currently it works in most modern browsers like firefox,  */
+}
+.item .caption a {
+	display: block;
+}
+img {
+	position: absolute;
+}
+
+</style>
+<script type="text/javascript" src="">
+
+</script>
+</head>
+
+<body>
+
+	<div class="item">
+		<a href=""><img class="im" src="images/test.jpg"></a>
+		<div class="caption">
+			<a href="">project tit</a>
+			<p>project sub</p>
+		</div>
+	</div>
+
+</body>
+
+</html>
