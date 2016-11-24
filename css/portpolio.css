@@ -1,0 +1,102 @@
+/*gnb*/
+#wrap {
+	width: 100%;
+	position: relative;
+}
+#portpolio_header {
+	background: #3d3d3d;
+}
+#portpolio_header .back {
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#portpolio_header h1 {
+	float: left;
+	padding: 16px 0;
+}
+#portpolio_header h1 img {
+	vertical-align: middle;
+}
+#portpolio_header nav {
+	color: #fff;
+	font-family: 'NanumSquareB';
+	font-size: 20px;
+	float: right;
+	overflow: hidden;
+	line-height: 47px;
+	padding: 16px 0;
+	letter-spacing: -0.04em;
+}
+#portpolio_header nav ul {
+	float: left;
+}
+#portpolio_header nav ul li {
+	float: left;
+	padding-left: 60px;
+}
+#portpolio_header nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+#portpolio_header nav ul li a:hover, header nav ul li a:active {
+	color: #fec503;
+	text-decoration: none;
+}
+
+/*about/skill*/
+#content {
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 60px 0 0 0;
+	font-family: 'NanumBarunGothic';
+}
+#content h1 {
+	text-align: center;
+	color: #fec503;
+	font-size: 48px;
+	letter-spacing: -0.04em;
+}
+.about{
+	width: 50%;
+	float: left;
+	font-size: 16px;
+	overflow: hidden;
+}
+.about ul, .skill ul {
+	float: left;
+	width: 100%;
+}
+.about ul li, .skill ul li {
+	float: left;
+	width: 60%;
+	margin-bottom: 22px;
+}
+.about ul .tit, .skill ul .tit {
+	width: 40%;
+	font-weight: bold;
+}
+.about ul .tit+li {
+	color: #777;
+}
+.skill{
+	width: 50%;
+	float: right;
+	font-size: 16px;
+	overflow: hidden;
+}
+.about>div, .skill>div {
+	padding: 90px 0 0 0;
+}
+
+.skill ul span {
+	background: #777;
+	color: #fff;
+	font-size: 13px;
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	position: relative;
+	top: -1px;
+}
