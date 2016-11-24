@@ -5,6 +5,7 @@
 }
 #portpolio_header {
 	background: #3d3d3d;
+	min-width: 1024px;
 }
 #portpolio_header .back {
 	width: 1024px;
@@ -18,7 +19,7 @@
 #portpolio_header h1 img {
 	vertical-align: middle;
 }
-#portpolio_header nav {
+#portpolio_header .port_gnb {
 	color: #fff;
 	font-family: 'NanumSquareB';
 	font-size: 20px;
@@ -28,18 +29,18 @@
 	padding: 16px 0;
 	letter-spacing: -0.04em;
 }
-#portpolio_header nav ul {
+#portpolio_header .port_gnb ul {
 	float: left;
 }
-#portpolio_header nav ul li {
+#portpolio_header .port_gnb ul li {
 	float: left;
 	padding-left: 60px;
 }
-#portpolio_header nav ul li a {
+#portpolio_header .port_gnb ul li a {
 	color: #fff;
 	text-decoration: none;
 }
-#portpolio_header nav ul li a:hover, header nav ul li a:active {
+#portpolio_header .port_gnb ul li a:hover, header .port_gnb ul li a:active {
 	color: #fec503;
 	text-decoration: none;
 }
@@ -64,18 +65,22 @@
 	font-size: 16px;
 	overflow: hidden;
 }
+.about>div, .skill>div {
+	padding: 90px 7px 0 7px;
+}
 .about ul, .skill ul {
 	float: left;
 	width: 100%;
 }
 .about ul li, .skill ul li {
 	float: left;
-	width: 60%;
+	width: 55%;
 	margin-bottom: 22px;
 }
 .about ul .tit, .skill ul .tit {
 	width: 40%;
 	font-weight: bold;
+	clear: both;
 }
 .about ul .tit+li {
 	color: #777;
@@ -86,17 +91,52 @@
 	font-size: 16px;
 	overflow: hidden;
 }
-.about>div, .skill>div {
-	padding: 90px 0 0 0;
+.skill ul .tit+li {
+	border: 1px solid #777;
+	font-size: 14px;
 }
-
 .skill ul span {
 	background: #777;
 	color: #fff;
-	font-size: 13px;
 	display: inline-block;
-	width: 30%;
+	width: 33.3%;
 	text-align: center;
+}
+.skill ul span .graph {
 	position: relative;
-	top: -1px;
+	left: 25px;
+	font-size: 14px;
+	color: #333;
+	display: inline;
+	background: transparent;
+}
+.skill .tit+li span:nth-child(3) {
+	width: 15%;
+}
+
+/*portpolio*/
+.portpolio ul {
+	float: right;
+}
+.portpolio ul li {
+	float: left;
+	border: 1px solid #fec503;
+	font-family: 'NanumSquareB';
+	font-size: 14px;
+	margin-left: 8px;
+	width: 70px;
+	line-height: 28px;
+	text-align: center;
+	font-weight: bold;
+}
+.portpolio ul li:hover {
+	background: #fec503;
+}
+.portpolio ul li a {
+	color: #777;
+	text-decoration: none;
+}
+.portpolio ul li a:hover, .portpolio ul li a:active {
+	color: #fff;
+	text-decoration: none;
 }
