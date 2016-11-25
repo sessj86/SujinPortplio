@@ -10,6 +10,7 @@
 #portpolio_header {
 	background: #3d3d3d;
 	min-width: 1024px;
+	background-size: 100% auto;
 }
 #portpolio_header .back {
 	width: 1024px;
@@ -69,8 +70,9 @@
 	font-size: 16px;
 	overflow: hidden;
 }
-.about>div, .skill>div {
+.about>div, .skill>div, .experience>div {
 	padding: 90px 7px 0 7px;
+	overflow: hidden;
 }
 .about ul, .skill ul {
 	float: left;
@@ -119,18 +121,27 @@
 }
 
 /*portpolio*/
-.portpolio ul {
-	float: right;
+.portpolio {
+	text-align: center;
 }
 .portpolio ul li {
-	float: left;
+	display: inline-block;
+}
+.portpolio>div {
+	width: 100%;
+	text-align: center;
+	margin-top: 35px;
+}
+.portpolio ul {
+	display: inline-block;
+}
+.portpolio ul li {
+	display: inline-block;
 	border: 1px solid #fec503;
 	font-family: 'NanumSquareB';
 	font-size: 14px;
-	margin-left: 8px;
 	width: 70px;
 	line-height: 28px;
-	text-align: center;
 	font-weight: bold;
 }
 .portpolio ul li:hover {
@@ -139,6 +150,7 @@
 .portpolio ul li a {
 	color: #777;
 	text-decoration: none;
+	display: block;
 }
 .portpolio ul li a:hover, .portpolio ul li a:active {
 	color: #fff;
@@ -146,18 +158,24 @@
 }
 .portpolio_all {
 	width: 100%;
-	padding: 90px 0 0 0;
+	padding: 60px 0 0 0;
+	overflow: hidden;
+	text-align: center;
+}
+.portpolio_all ul {
+	display: inline-block;
 }
 .portpolio_all .item {
-	width: 336px;
-	height: 336px;
+	width: 502px;
+	height: 462px;
 	overflow: hidden;
 	position: relative;
 	float: left;
 	margin: 0 8px 8px 0;
+	border: 1px solid #dedede;
 }
 .portpolio_all .item .caption {
-	width: 336px;
+/*	width: 512px;
 	height: 336px;
 	background: #ffae4c;
 	color: #fff;
@@ -167,7 +185,7 @@
 	font-size: 15px;
 	text-align: center;
 	line-height: 336px;
-	letter-spacing: -0.04em;
+	letter-spacing: -0.04em;*/
 	/* opacity setting */
 	filter:alpha(opacity=80);    /* ie  */
 	-moz-opacity:0.8;    /* old mozilla browser like netscape  */
@@ -181,15 +199,53 @@
 	display: block;
 	color: #fff;
 }
-.portpolio_all img {
-	position: absolute;
+.portpolio_all .item img {
+/*	position: absolute;*/
 }
 .portpolio_all ul li:nth-child(3) {
 	margin-right: 0;
 }
-.portpolio_all ul li:nth-child(6) {
-	margin-right: 0;
+
+/*portpolio_detail*/
+.detail_box {
+	width: 670px;
+/*	border: 1px solid #dedede;*/
+	height: 700px;
+	float: left;
 }
-.portpolio_all ul li:nth-child(9) {
-	margin-right: 0;
+
+
+.detail_box_sub {
+	width: 338px;
+	float: right;
+	font-size: 16px;
 }
+.detail_box_sub ul{
+	float: left;
+}
+.detail_box_sub ul li {
+	float: left;
+	width: 59%;
+	margin-bottom: 22px;
+}
+.detail_box_sub ul li a {
+	color: #fec503;
+	font-weight: bold;
+}
+.detail_box_sub ul .tit {
+	width: 40%;
+	font-weight: bold;
+	clear: both;
+}
+.detail_box_sub ul .tit+li {
+	color: #777;
+}
+
+/*experience*/
+./*experience .back {
+	position: relative;
+	left: 50%;
+	background:url('../images/stick_back.jpg') no-repeat;
+	width: 8px;
+	height: 550px;
+}*/

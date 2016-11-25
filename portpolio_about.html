@@ -6,11 +6,15 @@
 <!--[if lt IE 9]>
     <script src="http://oss.maxcdh.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
-<title>CSJ Portpolio | about</title>
+<title>CSJ | about</title>
 <link rel="stylesheet" type="text/css" href="css/darum_reset.css">
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/portpolio.css">
-<script type="text/javascript" src=""></script>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- <script type="text/javascript" src="js/portpolio.js"></script> -->
+<script type="text/javascript">
+</script>
 </head>
 
 <body>
@@ -18,14 +22,9 @@
 <div id="wrap">
 	<section id="portpolio_about">
 	<!-- gnb -->
-	<header id="portpolio_header">
-	<div class="back">
-		<h1><img src="images/icon_face.png"></h1>
-		<nav class="port_gnb">
-		<ul><li><a href="portpolio_about.html">about</a></li><li><a href="portpolio_portpolio.html">portpolio</a></li><li><a href="portpolio_expierence.html">experience</a></li></ul>
-		</nav>
-	</div>
-	</header>
+	<?php include("include/header.php");?>
+	<!-- //gnb -->
+
 	<!-- contents -->
 	<section id="content">
 	<article class="about">
@@ -50,7 +49,7 @@
 		<li class="tit">Css</li>
 		<li><span>하</span><span>중</span><span><span class="graph">상</span></span></li>
 		<li class="tit">Javascript/Jquery</li>
-		<li><span>하</span><span style="background:#fff; color:#333;">중</span><span style="background:#fff; color:#333;">상</span></li>
+		<li><span>하</span><span style="background:#fff; color:#333;">중</span><span style="background:#fff; color:#333;"><span class="graph">상</span></span></li>
 		<li class="tit">Phothshop/Illustration</li>
 		<li><span>하</span><span>중</span><span><span class="graph">상</span></span></li>
 		</ul>
@@ -58,6 +57,7 @@
 	</article>
 	</section>
 	</section>
+</div>
 
 </body>
 
